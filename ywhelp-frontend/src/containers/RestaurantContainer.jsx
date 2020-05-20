@@ -31,7 +31,7 @@ export class RestaurantContainer extends Component {
 
 
     render() {
-        console.log("hello")
+        console.log(this.props)
         return (
 
             <div className = "container" >

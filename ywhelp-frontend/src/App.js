@@ -42,31 +42,31 @@ class App extends Component{
   }
 
   render(){
-    console.log(this.state)
+    console.log(this.state.restaurants)
 
     return(
       <div className="App">
-      <NavBar />
+        <NavBar />
 
-      <Switch>
+        <Switch>
 
-        <Route path="/" exact>
-          <Home />
-        </Route>
+          <Route path="/" exact>
+            <Home />
+          </Route>
 
-        <Route path="restaurants">
-          <RestaurantContainer
-            restaurants={this.state.restaurants}
-            user={this.state.user}
-            token={this.state.token}
-           />
-        </Route>
+          <Route path="/restaurants">
+            <RestaurantContainer
+              restaurants={this.state.restaurants}
+              user={this.state.user}
+              token={this.state.token}
+            />
+          </Route>
 
-        <Route path="about">
-          <About />
-        </Route>
+          <Route path="/about">
+            <About />
+          </Route>
 
-      </Switch>
+        </Switch>
 
       </div>
     )

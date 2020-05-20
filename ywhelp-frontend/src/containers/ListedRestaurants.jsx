@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Item from '../ProfileComponents/Item'
+import Restaurant from '../ProfileComponents/Restaurant'
 
 class ListedRestaurants extends Component {
 

@@ -11,9 +11,14 @@ body {
   box-sizing: border-box;
 }
 
+hr {
+  width: 50%;
+}
+
 .App {
   text-align: center;
 }
+
 
 
 ul.nav {
