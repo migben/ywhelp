@@ -28,11 +28,12 @@ ul.nav {
   overflow: hidden;
   display: flex;
   justify-content: space-evenly;
-  background-color: #333;
+  background-color: #bf3100;
 }
 
 ul.nav li {
   float: left;
+  font-weight: bold;
 }
 
 ul.nav li a {
@@ -44,5 +45,6 @@ ul.nav li a {
 }
 
 ul.nav li a:hover {
-  background-color: #111;
+  background-color: #fff;
+  color: #000;
 }

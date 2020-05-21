@@ -5,7 +5,7 @@ function NavBar() {
     return (
         <ul className="nav">
             <li>
-                <NavLink to="/">Ywhelp</NavLink>
+                <NavLink to="/">Home</NavLink>
             </li>
             <li>
                 <NavLink to="/restaurants">Restaurants</NavLink>
