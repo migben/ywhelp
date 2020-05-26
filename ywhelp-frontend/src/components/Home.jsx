@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Home(props) {
+const Home = (props) => {
     return (
         <div>
             <h1>Ywhelp Landing</h1>

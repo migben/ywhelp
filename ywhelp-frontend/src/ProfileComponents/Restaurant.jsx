@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Restaurant= (props) => {
+const Restaurant = (props) => {
     let {restaurant} = props
 
     {
-        console.log(props)
+        console.log(restaurant)
     }
 
     return (
