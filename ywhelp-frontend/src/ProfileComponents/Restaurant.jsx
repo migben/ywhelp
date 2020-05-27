@@ -3,12 +3,9 @@ import React from 'react'
 const Restaurant = (props) => {
     let {restaurant} = props
 
-    {
-        console.log(restaurant)
-    }
-
+  
+    console.log(props)
     return (
-
         
         <div className="restaurant">
             <h3 className="restaurant_name">{restaurant.name}</h3>

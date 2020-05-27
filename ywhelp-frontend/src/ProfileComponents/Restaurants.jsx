@@ -5,7 +5,7 @@ function Restaurants(props) {
 
     let NavNames = props.rests.map( (restObj, i)=> {
         return(
-            <li key={i} >
+            <li key={restObj.id} >
                 <NavLink to={`/${(restObj.name).split(" ").join("")}`} >{restObj.name}</NavLink>
             </li>
         )

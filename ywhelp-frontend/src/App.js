@@ -6,6 +6,7 @@ import NavBar from './components/NavBar'
 import Home from './components/Home'
 import RestaurantContainer from './containers/RestaurantContainer'
 import About from './components/About'
+import Restaurant from './ProfileComponents/Restaurant'
 
 
 class App extends Component{
@@ -41,6 +42,17 @@ class App extends Component{
       }
   }
 
+  arrRestContent = () => {
+        let arrOfRests = this.state.restaurants.map( (restObj, i) => {
+            return (
+                <Route path={`/${(restObj.name).split(" ").join("")}`} key={restObj.id}>
+                    <Restaurant  restaurant={restObj} />
+                </Route>
+            )
+        })
+        return arrOfRests
+    }
+
   render(){
     console.log(this.state.restaurants)
 
@@ -65,6 +77,8 @@ class App extends Component{
           <Route path="/about">
             <About />
           </Route>
+
+          {this.arrRestContent()}
 
         </Switch>
 
